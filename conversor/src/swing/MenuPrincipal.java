@@ -6,13 +6,23 @@ public class MenuPrincipal {
     public static void main(String[] args) {
 
         String[] conversoes = {"Conversor de Moeda", "Conversor de Temperatura"};
-        int conversaoEscolhida = (int) JOptionPane.showInputDialog(null, "Escolha uma opção", "Menu", JOptionPane.PLAIN_MESSAGE, null, conversoes, conversoes[0]);
+        String conversaoEscolhida = (String) JOptionPane.showInputDialog(
+            null,
+            "Escolha uma opção",
+            "Menu",
+            JOptionPane.PLAIN_MESSAGE,
+            null,
+            conversoes,
+            conversoes[0]);
         
         switch (conversaoEscolhida) {
-        case 0:
-            // chama método para conversão de moeda
+        case "Conversor de Moeda":
+
+            ConversorDeMoeda moeda = new ConversorDeMoeda();
+            moeda.mostrarConversorDeMoeda();
+
             break;
-        case 1:
+        case "Conversor de Temperatura":
             // chama método para conversão de temperatura
             break;
         default:
