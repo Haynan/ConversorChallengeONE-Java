@@ -1,5 +1,3 @@
-
-
 public class ListasSuspensas {
 
     private static String[] conversoes = {

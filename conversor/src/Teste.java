@@ -3,12 +3,12 @@ import javax.swing.JOptionPane;
 public class Teste {
     public static void main(String[] args) {
 
-        Telas menuPrincipal = new Telas();
+        TelasConversorMoedas menuPrincipal = new TelasConversorMoedas();
         String input = menuPrincipal.MenuPrincipal();
         
         switch (input) {
             case "Conversor de Moeda":
-                Telas novoValor = new Telas();
+                TelasConversorMoedas novoValor = new TelasConversorMoedas();
                 novoValor.InputValor();
                 break;
             case "Conversor de Temperatura":

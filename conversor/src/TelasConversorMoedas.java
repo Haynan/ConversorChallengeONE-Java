@@ -1,10 +1,10 @@
 import javax.swing.JOptionPane;
 
-public class Telas {
+public class TelasConversorMoedas {
 
     String moeda;
     String input;
-    double valor;
+    double valor = 0;
 
     public String MenuPrincipal() {
 
@@ -36,6 +36,7 @@ public class Telas {
             switch (moeda) {
                 case "De reais a Dólares":
                     // Lógica
+                    break;
                 case "De reais a Euros":
                     // Lógica
                     break;
@@ -71,7 +72,7 @@ public class Telas {
                         "Erro",
                         JOptionPane.ERROR_MESSAGE
                     );
-                    break;
+                    return ConversorDeMoeda();
             }
         }
 
